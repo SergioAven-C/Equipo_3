@@ -1,11 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Venta de teléfonos móviles nuevos y usados certificados con garantía.">
+    <title>MobileShop | Smartphones Nuevos y Usados</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+
+    <header>
+        <div class="header-content">
+            <h1>MobileShop</h1>
+            <p class="tagline">Tecnología móvil a tu alcance, nueva o reacondicionada.</p>
+            <div class="mision-vision" role="region" aria-label="Valores de la empresa">
+                <p><strong>Misión:</strong> Facilitar el acceso a la mejor tecnología móvil garantizando calidad y sostenibilidad.</p>
+                <p><strong>Visión:</strong> Ser la tienda líder en economía circular tecnológica en la región para 2030.</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="proyectos" aria-labelledby="titulo-proyectos">
+            <h2 id="titulo-proyectos">Catálogo de Equipos</h2>
+            <div class="contenedor-proyectos">
+                
+                <article class="proyecto-card">
+                    <img src="https://images.unsplash.com/photo-1696446701796-da61225697cc?auto=format&fit=crop&q=80&w=400" 
+                         alt="iPhone 15 Pro nuevo en color titanio">
+                    <div class="proyecto-info">
+                        <h3>iPhone 15 Pro - Nuevo</h3>
+                        <p>Pantalla Super Retina XDR y chip A17 Pro. Incluye garantía oficial de un año.</p>
+                        <a href="#" class="btn-link" aria-label="Ver detalles del iPhone 15 Pro">Más información</a>
+                    </div>
+                </article>
+
+                <article class="proyecto-card">
+                    <img src="https://images.unsplash.com/photo-1678911820864-e2c567c655d7?auto=format&fit=crop&q=80&w=400" 
+                         alt="Samsung Galaxy S23 Ultra usado con S-Pen">
+                    <div class="proyecto-info">
+                        <h3>Samsung S23 Ultra - Usado</h3>
+                        <p>Estado 10/10 (Grado A). Cámara de 200MP y S-Pen original. Precio de oferta.</p>
+                        <a href="#" class="btn-link" aria-label="Ver detalles del Samsung S23 Ultra usado">Más información</a>
+                    </div>
+                </article>
+
+                <article class="proyecto-card">
+                    <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&q=80&w=400" 
+                         alt="Google Pixel 8 color obsidiana">
+                    <div class="proyecto-info">
+                        <h3>Google Pixel 8 - Nuevo</h3>
+                        <p>La mejor cámara con inteligencia artificial de Google. Experiencia Android pura.</p>
+                        <a href="#" class="btn-link" aria-label="Ver detalles del Google Pixel 8">Más información</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="contacto" aria-labelledby="titulo-contacto">
+            <div class="form-container">
+                <h2 id="titulo-contacto">¿Buscas un equipo específico?</h2>
+                <p>Completa el formulario y te enviaremos una cotización personalizada.</p>
+                
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Ej. Ana García">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" required placeholder="correo@ejemplo.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Modelo o duda</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Ej. Estoy buscando un iPhone 13 usado de 128GB..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Enviar Solicitud</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <nav aria-label="Redes sociales">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">WhatsApp</a>
+            </nav>
+            <p class="copyright">&copy; 2026 MobileShop - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
