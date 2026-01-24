@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria Huellitas Felices</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header id="encabezado">
+        <div class="contenedor">
+            <h1>Veterinaria Huellitas Felices</h1>
+            <p>
+                Cuidamos la salud, bienestar y felicidad de tus mascotas con amor y profesionalismo.
+            </p>
+
+            <section class="mision-vision">
+                <h2>Misión</h2>
+                <p>
+                    Brindar servicios veterinarios de calidad, promoviendo el cuidado responsable y el bienestar animal.
+                </p>
+
+                <h2>Visión</h2>
+                <p>
+                    Ser la veterinaria líder en atención integral de mascotas en la comunidad.
+                </p>
+            </section>
+        </div>
+    </header>
+
+    <main>
+        <section id="proyectos" class="contenedor">
+            <h2>Servicios Destacados</h2>
+
+            <div class="tarjetas">
+
+                <article class="tarjeta">
+                    <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16" alt="Consulta veterinaria para mascotas">
+                    <h3>Consultas Veterinarias</h3>
+                    <p>
+                        Atención médica profesional para perros, gatos y otras mascotas, con diagnóstico y tratamiento.
+                    </p>
+                    <a href="#" class="boton">Ver más</a>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a" alt="Spa y estética para mascotas">
+                    <h3>Spa y Estética</h3>
+                    <p>
+                        Servicio de baño, corte de pelo, limpieza y estética para mantener a tu mascota feliz y saludable.
+                    </p>
+                    <a href="#" class="boton">Ver más</a>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b" 
+                    alt="Registro de mascotas y clientes">
+                    <h3>Registro de Clientes y Mascotas</h3>
+                    <p>
+                        Sistema de registro para llevar el control de clientes y el historial de sus mascotas.
+                    </p>
+                    <a href="#" class="boton">Ver más</a>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="contacto" class="contenedor">
+            <h2>Contacto</h2>
+
+            <form id="formulario-contacto">
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="campo">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                    <p id="mensajeError" class="error"></p>
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer id="pie">
+        <div class="contenedor">
+            <p>Síguenos en redes sociales:</p>
+
+            <nav class="redes">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">WhatsApp</a>
+            </nav>
+
+            <p>&copy; 2026 Veterinaria Huellitas Felices. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+<script src="validacion.js"></script>
+</body>
+</html>
