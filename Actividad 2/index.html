@@ -2,110 +2,88 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veterinaria Huellitas Felices</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header id="encabezado">
-        <div class="contenedor">
-            <h1>Veterinaria Huellitas Felices</h1>
-            <p>
-                Cuidamos la salud, bienestar y felicidad de tus mascotas con amor y profesionalismo.
+    <main class="contenido-principal">
+
+        <section id="nosotros" class="seccion nosotros">
+            <h2 class="titulo-seccion">Deja con nosotros en buenas manos!!</h2>
+            <p class="descripcion">
+                Cada animal que llega a nosotros representa una vida valiosa y una familia que espera compromiso, ética y profesionalismo. Por eso, asumimos la responsabilidad con vocación, conocimiento y empatía, cuidando no solo la salud física de cada paciente, sino también la tranquilidad de quienes confían en nosotros para proteger y mejorar la vida de tu compañero.
             </p>
+        </section>
 
-            <section class="mision-vision">
-                <h2>Misión</h2>
-                <p>
-                    Brindar servicios veterinarios de calidad, promoviendo el cuidado responsable y el bienestar animal.
-                </p>
+        <section id="servicios" class="seccion servicios">
+            <h2 class="titulo-seccion">Nuestros servicios</h2>
+            <ul class="lista-servicios">
 
-                <h2>Visión</h2>
-                <p>
-                    Ser la veterinaria líder en atención integral de mascotas en la comunidad.
-                </p>
-            </section>
-        </div>
-    </header>
+    <li class="servicio-card">
+        <h3 class="servicio-titulo">Vacunación</h3>
+        <p class="servicio-descripcion">
+             La vacunación es un acto de prevención y amor que protege la vida de las mascotas y 
+             fortalece su bienestar a largo plazo.
+        </p>
+    </li>
 
-    <main>
-        <section id="proyectos" class="contenedor">
-            <h2>Servicios Destacados</h2>
+    <li class="servicio-card">
+        <h3 class="servicio-titulo">Consultas</h3>
+        <p class="servicio-descripcion">
+            Como veterinarios, cada consulta es una oportunidad para prevenir, cuidar y mejorar la calidad de 
+            vida de nuestras mascotas con atención profesional y cercana.
+        </p>
+    </li>
 
-            <div class="tarjetas">
+    <li class="servicio-card">
+        <h3 class="servicio-titulo">Desparasitación</h3>
+        <p class="servicio-descripcion">
+            Es clave para proteger la salud de las mascotas y prevenir 
+            enfermedades que afectan su bienestar y el de su familia.
+        </p>
+    </li>
 
-                <article class="tarjeta">
-                    <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16" alt="Consulta veterinaria para mascotas">
-                    <h3>Consultas Veterinarias</h3>
-                    <p>
-                        Atención médica profesional para perros, gatos y otras mascotas, con diagnóstico y tratamiento.
-                    </p>
-                    <a href="#" class="boton">Ver más</a>
-                </article>
+    <li class="servicio-card">
+        <h3 class="servicio-titulo">Cirugías</h3>
+        <p class="servicio-descripcion">
+            La cirugía es un acto de precisión, responsabilidad y compromiso para 
+            devolver salud y calidad de vida a cada paciente.
+        </p>
+    </li>
 
-                <article class="tarjeta">
-                    <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a" alt="Spa y estética para mascotas">
-                    <h3>Spa y Estética</h3>
-                    <p>
-                        Servicio de baño, corte de pelo, limpieza y estética para mantener a tu mascota feliz y saludable.
-                    </p>
-                    <a href="#" class="boton">Ver más</a>
-                </article>
+    <li class="servicio-card">
+        <h3 class="servicio-titulo">Peluquería</h3>
+        <p class="servicio-descripcion">
+            No es solo estética, es parte del cuidado integral que 
+            mantiene la salud, higiene y bienestar de las mascotas.
+        </p>
+    </li>
 
-                <article class="tarjeta">
-                    <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b" 
-                    alt="Registro de mascotas y clientes">
-                    <h3>Registro de Clientes y Mascotas</h3>
-                    <p>
-                        Sistema de registro para llevar el control de clientes y el historial de sus mascotas.
-                    </p>
-                    <a href="#" class="boton">Ver más</a>
-                </article>
+            </ul>
+        </section>
+
+
+        <section id="contacto" class="seccion contacto">
+            <h2 class="titulo-seccion">Contactanos</h2>
+            <p class= "Redes">Siguenos en:</p>
+            <div class="Red-icon">
+                <a href="#" class="icono-red social-instagram">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <a href="#" class="icono-red social-facebook">
+        <i class="fab fa-facebook-f"></i>
+    </a>
 
             </div>
+            <p class="telefono">Teléfono</p>
+            <p class="=numero">555-123-4567</p>
         </section>
 
-        <section id="contacto" class="contenedor">
-            <h2>Contacto</h2>
-
-            <form id="formulario-contacto">
-                <div class="campo">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                </div>
-
-                <div class="campo">
-                    <label for="correo">Correo electrónico:</label>
-                    <input type="email" id="correo" name="correo" required>
-                    <p id="mensajeError" class="error"></p>
-                </div>
-
-                <div class="campo">
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-                </div>
-
-                <button type="submit">Enviar mensaje</button>
-            </form>
-        </section>
     </main>
 
-    <!-- PIE DE PÁGINA -->
-    <footer id="pie">
-        <div class="contenedor">
-            <p>Síguenos en redes sociales:</p>
-
-            <nav class="redes">
-                <a href="#">Facebook</a>
-                <a href="#">Instagram</a>
-                <a href="#">WhatsApp</a>
-            </nav>
-
-            <p>&copy; 2026 Veterinaria Huellitas Felices. Todos los derechos reservados.</p>
-        </div>
+    <footer class="pie-pagina">
+        <p class="texto-footer">© 2026 Clínica Veterinaria Huellitas Felices</p>
     </footer>
 
-<script src="validacion.js"></script>
 </body>
 </html>
