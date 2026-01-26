@@ -1,12 +1,9 @@
-/* Reset básico */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Tipografias para pagina */
 body {
     font-family: 'Konkhmer Sleokchher', sans-serif;
     background-color: #f3f1e6;
@@ -14,17 +11,14 @@ body {
     line-height: 1.6;
 }
 
-/* Contenido principal */
 .contenido-principal {
     width: 100%;
 }
 
-/* seccionS */
 .seccion {
     padding: 60px 8%;
 }
 
-/*SECCIÓN NOSOTROS (HERO) */
 .nosotros {
     background-color: #bfeee6;
     display: flex;
@@ -52,7 +46,6 @@ body {
     line-height: 1rem;
 }
 
-/*Estilo para servicios*/
 .servicios {
     background-color: #f3f1e6;
 }
@@ -63,7 +56,6 @@ body {
     margin-bottom: 40px;
 }
 
-/* Grid para servicios */
 .lista-servicios {
     list-style: none;
     display: grid;
@@ -71,7 +63,6 @@ body {
     gap: 25px;
 }
 
-/* Estilo para tarjetas */
 .lista-servicios {
     list-style: none;
     display: grid;
@@ -108,7 +99,6 @@ body {
 }
 
 
-/* Estilo para contactos */
 .contacto {
     background-color: #E3C1EE;
     text-align: center;
@@ -138,7 +128,6 @@ body {
 
 }
 
-/*Redes*/
 .icono-red {
     display: inline-flex;
     align-items: center;
@@ -158,7 +147,6 @@ body {
     opacity: 0.85;
 }
 
-/* COLORES POR RED */
 .social-instagram {
     background: #FAE6FF;
 }
@@ -167,7 +155,6 @@ body {
     background: #FAE6FF;
 }
 
-/* Footer */
 .pie-pagina {
     background-color: #5b3d91;
     padding: 15px;
@@ -187,9 +174,6 @@ body {
     font-size: 14px;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
 @media (max-width: 768px) {
     .nosotros .titulo-seccion {
         font-size: 32px;
