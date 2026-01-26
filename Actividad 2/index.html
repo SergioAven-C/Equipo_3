@@ -79,6 +79,23 @@
     <a href="#" class="icono-red social-facebook">
         <i class="fab fa-facebook-f"></i>
     </a>
+    
+    <form id="formulario-contacto" class="formulario-contacto">
+        <input type="text" name="nombre" placeholder="Nombre completo" required>
+        <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required>
+        <span id="mensajeError" class="error"></span>
+        <input 
+        type="tel"
+        id="telefono"
+        name="telefono"
+        placeholder="Ej. 5512345678"
+        maxlength="15"
+        required
+        >
+        <span id="errorTelefono" class="error"></span>
+        <textarea name="mensaje" placeholder="Escribe tu mensaje..." rows="4" required></textarea>
+        <button type="submit">Enviar mensaje</button>
+    </form>
 
             </div>
             <p class="telefono">Teléfono</p>
@@ -91,5 +108,6 @@
         <p class="texto-footer">© 2026 Clínica Veterinaria Huellitas Felices</p>
     </footer>
 
+    <script src="validacion.js"></script>
 </body>
 </html>

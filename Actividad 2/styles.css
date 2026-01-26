@@ -128,6 +128,13 @@ body {
 
 }
 
+.error {
+    color: #d32f2f;
+    font-family: Kameron;
+    font-size: 13px;
+    text-align: left;
+}
+
 .icono-red {
     display: inline-flex;
     align-items: center;
@@ -136,11 +143,12 @@ body {
     height: 60px;
     margin: 0 8px;
     border-radius: 50%;
-    font-size: 20px;
-    color: #fff;
+    font-size: 22px;
+    color: #5b3d91;
     text-decoration: none;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
+
 
 .icono-red:hover {
     transform: scale(1.1);
@@ -153,6 +161,45 @@ body {
 
 .social-facebook {
     background: #FAE6FF;
+}
+
+.formulario-contacto {
+    max-width: 500px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-family: Kameron;
+    font-size: 14px;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px #5b3d91;
+}
+
+.formulario-contacto button {
+    background-color: #5b3d91;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-family: 'Konkhmer Sleokchher', sans-serif;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.formulario-contacto button:hover {
+    background-color: #472c78;
 }
 
 .pie-pagina {
