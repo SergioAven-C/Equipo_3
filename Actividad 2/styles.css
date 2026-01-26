@@ -1,182 +1,205 @@
-/* ESTILOS GENERALES */
+/* Reset básico */
+
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    box-sizing: border-box;
 }
 
+/* Tipografias para pagina */
 body {
-    background-color: #f8f9fa;
+    font-family: 'Konkhmer Sleokchher', sans-serif;
+    background-color: #f3f1e6;
     color: #333;
     line-height: 1.6;
 }
 
-/* CONTENEDOR GENERAL */
-.contenedor {
-    width: 90%;
-    max-width: 1100px;
-    margin: auto;
-    padding: 20px 0;
+/* Contenido principal */
+.contenido-principal {
+    width: 100%;
 }
 
-#encabezado {
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.55),
-        rgba(0, 0, 0, 0.55)
-    ),
-    url("https://images.unsplash.com/photo-1583511655857-d19b40a7a54e");
-
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-    padding: 80px 20px;
+/* seccionS */
+.seccion {
+    padding: 60px 8%;
 }
 
-#encabezado h1 {
-    font-size: 2.8rem;
-    margin-bottom: 15px;
-}
-
-#encabezado p {
-    font-size: 1.1rem;
-}
-
-/* SECCIÓN PROYECTOS */
-#proyectos h2 {
-    text-align: center;
-    margin-bottom: 25px;
-}
-
-.tarjetas {
+/*SECCIÓN NOSOTROS (HERO) */
+.nosotros {
+    background-color: #bfeee6;
     display: flex;
+    flex-direction: column;
     gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
-.tarjeta {
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    width: 300px;
-    padding: 15px;
+.nosotros .titulo-seccion {
+    font-family: 'Konkhmer Sleokchher', Arial, sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    line-height :0.85em;
+    color: #6a4ca3;
+    max-width: 500px;
+}
+
+.nosotros .descripcion {
+    max-width: 520px;
+    font-size: 15px;
+    color: #563484;
+}
+
+.descripcion{
+    font-family: Kameron;
+    line-height: 1rem;
+}
+
+/*Estilo para servicios*/
+.servicios {
+    background-color: #f3f1e6;
+}
+
+.servicios .titulo-seccion {
+    font-size: 60px;
+    color: #b45a3c;
+    margin-bottom: 40px;
+}
+
+/* Grid para servicios */
+.lista-servicios {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+/* Estilo para tarjetas */
+.lista-servicios {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+
+}
+
+.servicio-card {
+    background-color: #ffffff;
+    padding: 22px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servicio-card:hover {
+    transform: translateY(-6px);
+}
+
+.servicio-titulo {
+    font-size: 25px;
+    color: #b45a3c;
+    margin-bottom: 10px;
+}
+
+.servicio-descripcion {
+    font-size: 14px;
+    color: #5C2D1F;
+    line-height: 1.5;
+    font-family: Kameron;
+}
+
+.servicio:hover {
+    transform: translateY(-5px);
+}
+
+
+/* Estilo para contactos */
+.contacto {
+    background-color: #E3C1EE;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.tarjeta img {
-    width: 100%;
-    border-radius: 8px;
-    height: 180px;
-    object-fit: cover;
-}
-
-.tarjeta h3 {
-    margin: 10px 0;
-}
-
-.tarjeta img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.boton {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 8px 15px;
-    background-color: #4CAF50;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.boton:hover {
-    background-color: #388E3C;
-}
-
-/* FORMULARIO */
-#contacto h2 {
-    text-align: center;
+.contacto .titulo-seccion {
+    font-size: 90px;
+    color: #5b3d91;
     margin-bottom: 20px;
 }
 
-#formulario-contacto {
-    max-width: 500px;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid #ddd;
-}
-
-.campo {
-    margin-bottom: 15px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    border-radius: 5px;
+.dato-contacto {
     font-size: 16px;
-    cursor: pointer;
+    margin: 6px 0;
+    font-family: Kameron;
+    color: #563484;
+    
 }
 
-button:hover {
-    background-color: #2E7D32;
+.telefono {
+    font-size   :36px;
+    
 }
 
-/* PIE DE PÁGINA */
-#pie {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 20px;
+.numero {
+      font-family: "Archivo Black", sans-serif;
+
 }
 
-.redes a {
-    color: #4CAF50;
-    margin: 0 10px;
+/*Redes*/
+.icono-red {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    margin: 0 8px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
     text-decoration: none;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.redes a:hover {
-    text-decoration: underline;
+.icono-red:hover {
+    transform: scale(1.1);
+    opacity: 0.85;
 }
 
-/* DISEÑO RESPONSIVO */
+/* COLORES POR RED */
+.social-instagram {
+    background: #FAE6FF;
+}
+
+.social-facebook {
+    background: #FAE6FF;
+}
+
+/* Footer */
+.pie-pagina {
+    background-color: #5b3d91;
+    padding: 15px;
+    text-align: center;
+    font-family: Kameron;
+}
+
+.Redes {
+    font-family: Kameron;
+    font-size: 36px;
+    color: #563484;
+}
+
+.texto-footer {
+    font-family: Kameron;
+    color: #e6c8f4;
+    font-size: 14px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
 @media (max-width: 768px) {
-    .tarjetas {
-        flex-direction: column;
-        align-items: center;
+    .nosotros .titulo-seccion {
+        font-size: 32px;
     }
 
-    #encabezado h1 {
-        font-size: 1.8rem;
+    .servicios .titulo-seccion {
+        font-size: 28px;
     }
-}
 
-.error {
-    color: #d32f2f;
-    font-size: 0.9rem;
-    margin-top: 5px;
+    .contacto .titulo-seccion {
+        font-size: 26px;
+    }
 }
