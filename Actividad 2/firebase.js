@@ -3,11 +3,11 @@ import { getFirestore } from "https://www.gstatic.com/firebasejs/12.8.0/firebase
 
 const firebaseConfig = {
   apiKey: "TU_API_KEY",
-  authDomain: "veterinaria-1496e.firebaseapp.com",
-  projectId: "veterinaria-1496e",
-  storageBucket: "veterinaria-1496e.firebasestorage.app",
-  messagingSenderId: "225229833685",
-  appId: "1:225229833685:web:bd4791ba2e7d49d015695c"
+  authDomain: "TU_AUTH_DOMAIN",
+  projectId: "TU_PROJECT_ID",
+  storageBucket: "TU_STORAGE",
+  messagingSenderId: "TU_SENDER_ID",
+  appId: "TU_APP_ID"
 };
 
 const app = initializeApp(firebaseConfig);
