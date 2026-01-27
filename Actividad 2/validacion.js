@@ -19,15 +19,12 @@ document.getElementById("formulario-contacto").addEventListener("submit", functi
     const regexCorreo = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     const regexTelefonoMX = /^\d{10}$/;
 
-    // 🔄 LIMPIAR ERRORES (SOLO AQUÍ)
     mensajeErrorCorreo.textContent = "";
     mensajeErrorTelefono.textContent = "";
     mensajeErrorCorreo.style.display = "none";
     mensajeErrorTelefono.style.display = "none";
     correo.style.border = "none";
     telefono.style.border = "none";
-
-    /* ===== VALIDACIÓN CORREO ===== */
 
     const correoValor = correo.value.trim().toLowerCase();
 
@@ -50,8 +47,6 @@ document.getElementById("formulario-contacto").addEventListener("submit", functi
         return;
     }
 
-    /* ===== VALIDACIÓN TELÉFONO ===== */
-
     const telefonoLimpio = telefono.value.replace(/\D/g, "");
 
     if (!regexTelefonoMX.test(telefonoLimpio)) {
@@ -62,8 +57,6 @@ document.getElementById("formulario-contacto").addEventListener("submit", functi
         telefono.focus();
         return;
     }
-
-    /* ===== TODO OK ===== */
 
     alert("Formulario enviado correctamente ✅");
     this.reset();

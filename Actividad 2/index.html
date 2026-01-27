@@ -81,21 +81,33 @@
     </a>
     
     <form id="formulario-contacto" class="formulario-contacto">
-        <input type="text" name="nombre" placeholder="Nombre completo" required>
-        <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required>
-        <span id="mensajeError" class="error"></span>
         <input 
-        type="tel"
-        id="telefono"
-        name="telefono"
-        placeholder="Ej. 5512345678"
-        maxlength="15"
+        type="text" 
+        id="nombre"
+        name="nombre" 
+        placeholder="Nombre completo" 
         required
         >
+        
+        <form id="formulario-contacto" class="formulario-contacto" novalidate>
+        <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required>
+        <span id="mensajeError" class="error"></span> 
+
+        <input type="tel" id="telefono" name="telefono" placeholder="Ej. 5512345678" maxlength="15" required>
         <span id="errorTelefono" class="error"></span>
-        <textarea name="mensaje" placeholder="Escribe tu mensaje..." rows="4" required></textarea>
+        
+        <textarea 
+        id="mensaje"
+        name="mensaje"
+        placeholder="Escribe tu mensaje..." 
+        rows="4" 
+        required
+        ></textarea
+        >
+
         <button type="submit">Enviar mensaje</button>
     </form>
+
 
             </div>
             <p class="telefono">Teléfono</p>
@@ -107,7 +119,8 @@
     <footer class="pie-pagina">
         <p class="texto-footer">© 2026 Clínica Veterinaria Huellitas Felices</p>
     </footer>
-
-    <script src="validacion.js"></script>
+    
+    <script type="module" src="firebase.js"></script>
+    <script type="module" src="formulario.js"></script>
 </body>
 </html>
